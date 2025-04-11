@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Protiger Site Test</title>
-  <style>
-    body {
-      background: #f5f7fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .box {
-      background: white;
-      padding: 40px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-    }
-    h1 {
-      color: #2b6cb0;
-    }
-    p {
-      color: #555;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>傲虎科技 - Protiger Technology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="box">
-    <h1>🚀 网站部署成功！</h1>
-    <p>欢迎来到 <strong>protiger.net</strong> 的测试页面。</p>
-    <p>如果你能看到这个页面，说明 GitHub Pages 已经正常运行啦 🎉</p>
-  </div>
+  <header>
+    <div class="logo">傲虎科技 Protiger</div>
+    <nav>
+      <button onclick="setLang('zh')">中文</button>
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('ko')">한국어</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 data-lang-zh="欢迎来到傲虎科技" 
+          data-lang-en="Welcome to Protiger Technology" 
+          data-lang-ko="프로타이거 테크놀로지에 오신 것을 환영합니다">
+          欢迎来到傲虎科技
+      </h1>
+      <p data-lang-zh="致力于创新电子与智能科技产品。" 
+         data-lang-en="Dedicated to innovation in electronics and smart technologies." 
+         data-lang-ko="전자 및 스마트 기술 혁신에 전념합니다.">
+         致力于创新电子与智能科技产品。
+      </p>
+    </section>
+    <section class="services">
+      <h2 data-lang-zh="我们的服务" data-lang-en="Our Services" data-lang-ko="서비스 소개">我们的服务</h2>
+      <ul>
+        <li data-lang-zh="电子产品开发" data-lang-en="Electronic Product Development" data-lang-ko="전자 제품 개발">电子产品开发</li>
+        <li data-lang-zh="智能硬件解决方案" data-lang-en="Smart Hardware Solutions" data-lang-ko="스마트 하드웨어 솔루션">智能硬件解决方案</li>
+        <li data-lang-zh="技术咨询与支持" data-lang-en="Technical Consulting & Support" data-lang-ko="기술 컨설팅 및 지원">技术咨询与支持</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 傲虎科技 Protiger.net</p>
+  </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
