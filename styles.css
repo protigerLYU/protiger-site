@@ -24,7 +24,7 @@ nav button {
   padding: 2em;
   text-align: center;
 }
-.services {
+.services, .description {
   padding: 2em;
   background: #f9f9f9;
 }
