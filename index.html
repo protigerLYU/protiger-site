@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#061a3e">
-<title>XZCHT® | 锂电匀浆·涂布工艺解决方案</title>
-<meta name="description" content="XZCHT® 聚焦锂电匀浆与涂布工艺，提供消耗品、设备零部件、易损件、国产替代、非标定制与持续备件供应。">
+<title>XZCHT® | 品牌工艺备件与非标定制</title>
+<meta name="description" content="XZCHT® 聚焦锂电匀浆与涂布工艺，提供搅拌分散、流体管路、过滤除铁、密封耐磨、辊系传动及工装导向等品牌产品，支持按图定制、来样测绘、工况适配与持续备件供应。">
 <style>
 :root{
  --cyan:#19d9ed;--blue:#2460ff;--purple:#9b2df2;--navy:#061631;--navy2:#08244f;
@@ -14,6 +14,7 @@
 }
 *{box-sizing:border-box}
 html{overflow-x:hidden;scroll-behavior:smooth}
+[id]{scroll-margin-top:100px}
 body{margin:0;overflow-x:hidden;background:#fff;color:var(--ink);font-family:Inter,Arial,"Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
@@ -44,6 +45,12 @@ button{font:inherit}
 .hero-copy h1{margin:0;font-size:clamp(54px,5.4vw,84px);line-height:.98;letter-spacing:-.055em;background:linear-gradient(100deg,var(--cyan),#1765fb 48%,var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-copy h2{font-size:clamp(34px,3.8vw,58px);line-height:1.05;letter-spacing:-.04em;margin:14px 0 22px;color:#101527}
 .hero-copy>p{font-size:17px;line-height:1.85;color:#4e5c71;max-width:680px;margin:0 0 30px}
+.brand-eyebrow{display:block;margin-bottom:14px;font-size:13px;font-weight:800;letter-spacing:.06em;color:#2458cf}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.action-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px;border:1px solid #c7d6f6;border-radius:10px;color:#214fc4;background:#fff;font-size:14px;font-weight:700;line-height:1.5;text-align:center}
+.action-link.primary{border-color:transparent;background:linear-gradient(110deg,#2460ff,#7944e5);color:#fff;box-shadow:0 8px 20px rgba(36,96,255,.16)}
+.action-link:hover{filter:brightness(.96)}
+a:focus-visible,button:focus-visible{outline:3px solid #2460ff;outline-offset:4px}
 .hero-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .feature-mini{border:1px solid #e7edfb;border-radius:16px;background:rgba(255,255,255,.86);padding:14px 10px;text-align:center;min-width:0}
 .feature-mini .icon{width:46px;height:46px;margin:auto auto 8px;border:1px solid #d8e4ff;border-radius:50%;display:grid;place-items:center;color:#2458ff;font-size:20px}
@@ -107,6 +114,25 @@ button{font:inherit}
 .cover-card .mini-tag{display:inline-block;margin-top:12px;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;background:#eef7ff;color:#2760e8}
 .cover-card.purple .mini-tag{background:#faf1ff;color:#922cf1}
 
+.brand-products{background:var(--soft);border-block:1px solid var(--line)}
+.brand-products .section-heading p{max-width:760px;margin:12px auto 0;line-height:1.8}
+.brand-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.brand-product-card{min-width:0;padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow)}
+.brand-product-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}
+.brand-product-head>div{min-width:0}
+.brand-product-head small{display:block;font-size:11px;letter-spacing:.08em;color:#64799a;margin-bottom:7px}
+.brand-product-head h3{font-size:20px;line-height:1.5;color:#16386b;margin:0}
+.brand-product-head img{width:76px;height:68px;object-fit:contain;flex:none}
+.brand-product-card p{font-size:13px;line-height:1.8;color:#526077;margin:0 0 14px}
+.brand-product-types{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 16px;padding:0;list-style:none}
+.brand-product-types li{padding:5px 9px;border-radius:7px;background:#f0f5fd;color:#38577d;font-size:12px;line-height:1.5}
+.brand-product-custom{border-top:1px solid var(--line);padding-top:13px;font-size:12px;line-height:1.8;color:#536177}
+.brand-product-custom b{color:#315bd2}
+.brand-custom-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px;padding:24px;border:1px solid #d8e3fc;border-radius:16px;background:linear-gradient(110deg,#edf6ff,#f5efff)}
+.brand-custom-banner h3{margin:0 0 7px;font-size:20px;color:#173766}
+.brand-custom-banner p{margin:0;font-size:13px;line-height:1.8;color:#526077}
+.brand-custom-banner .action-link{flex:none}
+
 .products{padding-top:20px}
 .marquee-shell{position:relative}
 .marquee-actions{display:flex;justify-content:flex-end;gap:10px;margin-bottom:10px}
@@ -149,6 +175,8 @@ button{font:inherit}
 .enrich-card{border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow);padding:24px}
 .enrich-card h3{margin:0 0 14px;font-size:22px;color:#15244b}
 .enrich-card p{margin:0;color:#55647a;font-size:14px;line-height:1.8}
+.enrich-card.custom-service{background:linear-gradient(140deg,#f4f8ff,#faf5ff);border-color:#cfddfa}
+.custom-service .action-link{margin-top:20px}
 .scope-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px;margin:16px 0 0;padding:0;list-style:none}
 .scope-list li{position:relative;padding-left:18px;font-size:13px;line-height:1.6;color:#324157}
 .scope-list li::before{content:"•";position:absolute;left:0;color:#2c73ff;font-weight:900}
@@ -189,7 +217,7 @@ button{font:inherit}
  .hero-copy{padding:36px 0 22px}
  .hero-media{padding:0 0 18px 0}
  .flow-groups{grid-template-columns:1fr}
- .cover-grid{grid-template-columns:repeat(2,1fr)}
+ .cover-grid,.brand-product-grid{grid-template-columns:repeat(2,1fr)}
  .adv-grid{grid-template-columns:1fr 1fr}
  .steps-line{grid-template-columns:repeat(3,1fr)}
 }
@@ -199,7 +227,8 @@ button{font:inherit}
  .hero-copy h2{font-size:34px}
  .hero-copy>p{font-size:15px}
  .hero-features{grid-template-columns:1fr 1fr}
- .category-grid,.cover-grid{grid-template-columns:1fr}
+ .category-grid,.cover-grid,.brand-product-grid{grid-template-columns:1fr}
+ .brand-custom-banner{align-items:flex-start;flex-direction:column}
  .category-card{grid-template-columns:1fr}
  .category-image{padding:0 18px 18px}
  .category-image img{height:200px}
@@ -236,13 +265,13 @@ button{font:inherit}
     <div class="brand-copy"><b>锂电匀浆·涂布工艺解决方案</b><span>专业备件 · 非标定制 · 一站式服务</span></div>
   </a>
   <nav class="desktop-nav">
-    <a href="#top">首页</a><a href="#products">产品中心</a><a href="#process">解决方案</a><a href="#custom">定制服务</a><a href="#categories">业务范围</a><a href="#contact">联系我们</a>
+    <a href="#top">首页</a><a href="#brand-products">产品类目</a><a href="#process">解决方案</a><a href="#custom">非标定制</a><a href="#categories">业务范围</a><a href="#contact">联系我们</a>
   </nav>
   <div class="contact-mini"><i>☎</i><div><b>156 9223 6624</b><small>快速响应 · 专业服务</small></div></div>
   <button class="menu-btn" id="menuBtn" aria-label="打开导航" aria-expanded="false">☰</button>
  </div>
  <nav class="mobile-menu" id="mobileMenu">
-   <a href="#top">首页</a><a href="#products">产品中心</a><a href="#process">解决方案</a><a href="#custom">定制服务</a><a href="#categories">业务范围</a><a href="#contact">联系我们</a>
+   <a href="#top">首页</a><a href="#brand-products">产品类目</a><a href="#process">解决方案</a><a href="#custom">非标定制</a><a href="#categories">业务范围</a><a href="#contact">联系我们</a>
  </nav>
 </header>
 
@@ -250,9 +279,11 @@ button{font:inherit}
 <section class="hero">
  <div class="container hero-grid">
   <div class="hero-copy">
+    <span class="brand-eyebrow">XZCHT® 品牌产品 · 非标定制</span>
     <h1>匀浆 · 涂布工艺</h1>
-    <h2>专业备件与定制服务</h2>
-    <p>专注锂电电极制造工艺，为匀浆与涂布环节提供消耗品、设备零部件、易损件、国产替代、非标定制及技术支持，服务于产线维护、改造与持续备件供应。</p>
+    <h2>品牌备件与非标定制</h2>
+    <p>XZCHT® 专注锂电匀浆与涂布工艺，提供工艺备件、功能组件与易损耗材。围绕设备接口、材质和使用工况，支持按图定制、来样测绘及结构适配，服务产线维护、备件替换与设备改造。</p>
+    <div class="hero-actions"><a class="action-link primary" href="#brand-products">查看品牌产品类目</a><a class="action-link" href="#custom">了解非标定制</a></div>
     <div class="hero-features">
       <div class="feature-mini"><div class="icon">▱</div><b>工艺理解</b><span>覆盖电极制造关键设备</span></div>
       <div class="feature-mini"><div class="icon">✓</div><b>品质可靠</b><span>材质与工况匹配</span></div>
@@ -296,7 +327,7 @@ button{font:inherit}
 <section class="section" id="categories">
  <div class="container">
   <div class="section-heading">
-    <h2>产品类别</h2>
+    <h2>工艺应用范围</h2>
     <p>覆盖匀浆与涂布工序的常用耗材、设备零部件和非标定制件</p>
   </div>
   <div class="category-grid">
@@ -326,6 +357,58 @@ button{font:inherit}
  </div>
 </section>
 
+<section class="section brand-products" id="brand-products" aria-labelledby="brand-products-title">
+ <div class="container">
+  <div class="section-heading">
+   <span class="brand-eyebrow">XZCHT® 产品系列</span>
+   <h2 id="brand-products-title">品牌产品类目</h2>
+   <p>围绕匀浆与涂布设备的关键部位，建立六大产品系列。各类产品均可结合设备尺寸、安装接口与实际工况，评估配套及非标定制方案。</p>
+  </div>
+  <div class="brand-product-grid">
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 01</small><h3>搅拌与分散组件</h3></div><img src="images/products/01.webp" alt="搅拌与分散类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>面向混合、分散与刮壁工序，配套搅拌执行部件及连接结构，匹配不同罐体空间和浆料工况。</p>
+    <ul class="brand-product-types"><li>搅拌桨与分散盘</li><li>搅拌轴与轴端连接</li><li>刮壁与安装组件</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>桨形与外径、轴长与连接方式、接触材质及表面处理。</div>
+   </article>
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 02</small><h3>流体控制与管路</h3></div><img src="images/products/03.webp" alt="流体输送类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>围绕罐底排料、浆料输送及回流连接，提供流体控制组件、管路连接件与泵配套部件。</p>
+    <ul class="brand-product-types"><li>排料与流体控制组件</li><li>快装管件与软连接</li><li>泵配件与接口转换</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>接口形式、连接尺寸、流道结构、安装空间及接液材质。</div>
+   </article>
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 03</small><h3>过滤与除铁组件</h3></div><img src="images/products/04.webp" alt="过滤与净化类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>用于粉料及浆料处理环节，配套过滤、筛分、磁性分离与真空脱泡设备的功能件和耗材。</p>
+    <ul class="brand-product-types"><li>滤芯滤袋与滤篮</li><li>筛网与除铁组件</li><li>真空过滤配套件</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>外形与安装尺寸、过滤或筛分要求、框架结构及密封接口。</div>
+   </article>
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 04</small><h3>密封与耐磨制品</h3></div><img src="images/products/06.webp" alt="密封与垫片类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>面向罐体、管路、模头及烘箱的密封和接触部位，提供异形密封、垫片与柔性耐磨制品。</p>
+    <ul class="brand-product-types"><li>快装密封与异形垫片</li><li>硅胶与柔性制品</li><li>耐温密封与耐磨衬件</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>截面与厚度、材料与硬度、耐温耐介质要求及装配配合。</div>
+   </article>
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 05</small><h3>辊系与传动组件</h3></div><img src="images/products/08.webp" alt="辊系与传动类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>用于涂布、牵引、导向与收放卷机构，配套辊筒、轴端连接及传动部件，适应设备维护和改造。</p>
+    <ul class="brand-product-types"><li>导向辊与功能辊</li><li>联轴器与轴端配套</li><li>传动与收放卷配件</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>辊径与有效长度、轴端接口、包覆材质及装配精度要求。</div>
+   </article>
+   <article class="brand-product-card">
+    <div class="brand-product-head"><div><small>XZCHT® · 06</small><h3>工装与导向结构</h3></div><img src="images/products/17.webp" alt="工装与导向类产品" width="320" height="240" loading="lazy" decoding="async"></div>
+    <p>围绕定位、夹持、调节与传感器安装，提供适配现场空间的工装支架、导向结构及非标连接件。</p>
+    <ul class="brand-product-types"><li>定位夹持与导向组件</li><li>调节支架与安装座</li><li>非标法兰与连接结构</li></ul>
+    <div class="brand-product-custom"><b>可定制方向：</b>安装孔位、调节行程、定位基准、结构尺寸及表面处理。</div>
+   </article>
+  </div>
+  <div class="brand-custom-banner">
+   <div><h3>从品牌产品配套，到专属非标定制</h3><p>提供图纸、样件或设备工况，沟通结构、材料和验收要求，让备件适配实际使用。</p></div>
+   <a class="action-link primary" href="#custom">查看非标定制服务</a>
+  </div>
+ </div>
+</section>
+
 <section class="section">
   <div class="container">
     <div class="section-heading">
@@ -348,8 +431,8 @@ button{font:inherit}
 <section class="section products" id="products">
  <div class="container">
   <div class="section-heading">
-    <h2>热销产品展示</h2>
-    <p>平滑连续自动循环播放，支持鼠标拖动、手机触摸与左右按钮浏览</p>
+    <h2>产品与配套展示</h2>
+    <p>涵盖搅拌、输送、过滤、密封与涂布配套，支持按设备接口及使用需求沟通定制</p>
   </div>
   <div class="marquee-shell">
     <div class="marquee-actions">
@@ -383,29 +466,29 @@ button{font:inherit}
   </div>
 
   <div class="enrich-grid" id="custom">
-    <div class="enrich-card">
-      <h3>可供品类说明</h3>
-      <p>除页面展示的典型件外，还可配套搅拌轴、刮壁机构、真空管路、滤袋、滤篮、磁棒、回流组件、模头调节块、张力传感器安装件、耐温密封条、风阀连接件、擦拭清洁件等多类备件与耗材。</p>
+    <div class="enrich-card custom-service">
+      <span class="brand-eyebrow">XZCHT® 非标定制服务</span>
+      <h3>按图、按样、按工况定制</h3>
+      <p>从单件备件到功能组件，围绕客户设备的安装空间、连接接口与使用要求，沟通适合的结构和材料方案。适用于特殊尺寸适配、易损件改进、旧件替换与设备改造。</p>
       <ul class="scope-list">
-        <li>匀浆罐 制胶罐 缓存罐 发送罐</li>
-        <li>螺杆泵 隔膜泵 转子泵 计量泵</li>
-        <li>过滤器 滤芯 滤袋 除铁器组件</li>
-        <li>卫生管件 快装接头 软管与密封</li>
-        <li>挤压模头 模唇 模头垫片 调节机构</li>
-        <li>涂布辊 背辊 牵引辊 导向辊</li>
-        <li>气胀轴 安全夹头 纠偏机构 张力组件</li>
-        <li>风嘴 风刀 刮刀 耐温密封 风路件</li>
+        <li>按图定制：确认图纸版本与关键尺寸</li>
+        <li>来样测绘：复核旧件结构与安装关系</li>
+        <li>接口适配：孔位、法兰、轴端与连接方式</li>
+        <li>工况选材：温度、介质、磨损及清洁要求</li>
+        <li>结构优化：定位、密封、拆装与维护便利性</li>
+        <li>交付配套：确认验收要求与后续供货需求</li>
       </ul>
+      <a class="action-link primary" href="#contact">联系沟通定制需求</a>
     </div>
     <div class="enrich-card">
       <h3>非标定制流程</h3>
-      <p>适用于进口件、停产件、无图纸件以及现场需要加快替代的高频备件。可基于实物、照片、型号或现场尺寸进行匹配和定制。</p>
+      <p>从需求确认到样件验证，逐步明确尺寸、材质与交付标准。可先提供图纸或样件；无图纸时，可结合旧件照片、安装尺寸及设备工况开展评估。</p>
       <div class="steps-line">
-        <div class="step-box"><b>01 资料确认</b><span>设备位置 旧件照片 型号参数</span></div>
-        <div class="step-box"><b>02 测绘确认</b><span>尺寸接口 公差 材质表面</span></div>
-        <div class="step-box"><b>03 方案制造</b><span>标准替代 国产替代 非标加工</span></div>
-        <div class="step-box"><b>04 装机验证</b><span>装配 密封 跳动 耐磨测试</span></div>
-        <div class="step-box"><b>05 备库交付</b><span>编码建档 周期供应 安全库存</span></div>
+        <div class="step-box"><b>01 需求沟通</b><span>图纸样件 安装位置 使用工况</span></div>
+        <div class="step-box"><b>02 技术确认</b><span>接口尺寸 配合公差 材质表面</span></div>
+        <div class="step-box"><b>03 方案定制</b><span>结构确认 加工方案 样件制作</span></div>
+        <div class="step-box"><b>04 样件验证</b><span>按约定核对装配及使用表现</span></div>
+        <div class="step-box"><b>05 配套交付</b><span>验收交付 资料建档 持续供应</span></div>
       </div>
     </div>
   </div>
@@ -437,7 +520,7 @@ button{font:inherit}
       <h4>微信咨询</h4>
       <div class="qr-block">
         <img src="images/qrcode.webp" alt="微信二维码" width="105" height="99" loading="lazy">
-        <p>扫码添加微信<br>获取产品资料与报价<br>技术咨询与售后支持</p>
+        <p>扫码添加微信<br>咨询品牌产品与非标定制<br>提供图纸、样件或工况需求</p>
       </div>
     </div>
     <div class="map-block"><img src="images/map-bg.webp" alt="服务地图" width="280" height="112" loading="lazy"></div>
